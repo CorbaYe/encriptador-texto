@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<link rel="stylesheet" type="text/css" href="reset.css">
+		<link rel="stylesheet" href="materialize/css/materialize.css">
+		<script type="text/javascript" src="materialize/js/materialize.min.js"></script>
+		<title>Encriptador de texto</title>
+	</head>
+
+	<body>
+		<header id="cabecera">
+			<h4>Encriptador de texto | Challenge ONE</h4>
+		</header>
+
+		<main class="cuerpo">
+			<section id="left">
+		    <div class="row" id="div-left">
+		     	<form class="col s12">
+
+		       		<div class="row">
+		        	 	<div class="input-field col s12" id="textarea">
+		        	   		<textarea id="entradaTexto" class="materialize-textarea" maxlength="2280" onkeyup="contarCaracteres()" required></textarea>
+		        	   		<label for="entradaTexto" id="label-color">Ingrese el texto a encriptar</label>
+		        		</div>
+		        		<div class="contador-caracteres">
+		        			<label id="contador">0</label>
+									<label class="cantidad-max">/2280</label>
+		        		</div>
+		      	 	</div>
+
+		      	 	<div class="botones">
+
+		      	 		<div>
+		      	 			<form>		      	 				
+		      	 				<label class="informacion"><img src="img/boton-de-informacion.png" alt="token-informacion.png">  Solo letras minúsculas y sin acentos.</label>
+		      	 			</form>
+		      	 		</div>
+
+		      	 		<div class="contenedor">
+			      	 		<button id="encriptar" class="encriptar">Encriptar</button>
+			      	 		<button id="desencriptar" class="desencriptar">Desencriptar</button>
+		      	 		</div>
+		      	 	</div>
+
+		     	</form>
+		    </div>
+			</section>
+
+			<section id="right">
+				<div id="div-right">
+					<label id="nuevoTexto" class="texto-procesado">Texto encriptado</label>
+				</div>	
+
+				<div id="munheco">
+					<img src="img/muñeco.png" alt="muñeco.png" class="munheco-img">
+				</div>
+				<div id="info">
+					<p class="texto-superior">Ningún mensaje fue encontrado</p>
+					<p class="texto-inferior">Ingresa el texto que deseas encriptar o desencriptar.</p>
+				</div>
+
+  	 		<div class="contenedor-copiar" id="contenedor-copiar">
+    	 		<button id="copiar" class="copiar">Copiar</button>
+  	 		</div>
+			</section>
+		</main>
+
+		<footer class="page-footer">
+      <div class="container">
+        <div class="row">
+
+          <div class="col l6 s12">
+            <h5 class="white-text">Encriptador de texto</h5>
+            <p class="grey-text text-lighten-4">Primer challenge ONE, construir un encriptador de texto. #challengeonecodificador5</p>
+          </div>
+
+          <div class="col l4 offset-l2 s12">
+            <h5 class="white-text">Links</h5>
+            <ul>
+              <li><a class="grey-text text-lighten-3" href="https://materializecss.com/">Referencias CSS/js</a></li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </footer>
+	</body>
+	<script type="text/javascript" src="script.js"></script>
+</html>
